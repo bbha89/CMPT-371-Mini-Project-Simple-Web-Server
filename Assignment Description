@@ -1,0 +1,18 @@
+You previously have coded simple TCP and UDP client and servers in IS(3) and IS(4) using socket programming. In the first part of your mini project, using what you learned about socket programming, and HTTP protocol, create your simple web server. At this step, your web server will handle one HTTP request at a time, and implements the following messages for all of the relevant methods to the client:
+
+Code	Message
+200		OK
+304		Not Modified
+400		Bad request
+404		Not Found
+408		Request Timed Out
+
+To test your web server, copy test.html in the same directory of your web server. Then find out the IP address of your machine, and port used in the code for web server and type the following in your web browser:
+
+http://IP_ADDRESS:PORT/test.html
+
+Edit your test file, or send the request properly to test your different message scenarios. Print screen, or cut and past output and document your test procedures.
+
+For the second part of your mini project, extend your web server to its multi-threaded version, capable of handling multiple requests simultaneously. You can implement this with your main thread listening for clients at a fixed port. When your server receives a TCP connection request from a client, the TCP connection to serve the client should happen through another port. Each TCP connection requested is handled in a separate thread.
+
+Decide the test procedure to show the multi-threaded nature of your server. Print screen, or cut and past output and document your test procedures to show.
